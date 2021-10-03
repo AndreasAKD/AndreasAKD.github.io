@@ -64,9 +64,9 @@ let i = 0;
 let images = [];
 let time = setInterval(changeImage, 2000);
 images[0] = '/images/Commodore.jpg';
-images[1] = '/images/computerCode.jpg';
+images[1] = '.images/computerCode.jpg';
 images[2] = '/images/Drone.jpg';
-images[3] = '/images/WorkingPeople.jpg';
+images[3] = '.images/WorkingPeople.jpg';
 
 //Loops through array of images
 function changeImage() {
