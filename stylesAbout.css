@@ -1,0 +1,289 @@
+:root {
+    --clr-light: #EEEEEE;
+    --clr-dark: #476072;
+    --clr-accent: #334257;
+    --clr-alt: #548CA8;
+    --clr-bright: rgb(13, 165, 165);
+}
+
+p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: black;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    margin-top: 1em;
+    color: black;
+}
+
+.btnShow {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    object-fit: contain;
+    border: 0;
+    top: 3%;
+    cursor: pointer;
+}
+
+.btnShow:hover {
+    color: black !important;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "gridGroup gridGroup" "grid1 grid2" "grid3 grid4" "grid5 grid5" "footer footer";
+}
+
+#gridGroup {
+    height: 100%;
+    margin-bottom: 2%;
+    background: #EEEEEE;
+    text-align: center;
+    overflow: hidden;
+    grid-area: gridGroup
+}
+
+#gridGroup p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 25px;
+    margin-top: 1em;
+    color: black;
+}
+
+#grid1 {
+    height: fit-content;
+    background: white;
+    text-align: center;
+    grid-area: grid1;
+}
+
+#grid1>img {
+    margin-top: 1em;
+    max-height: 30vh;
+    max-width: 30vh;
+    object-fit: contain;
+    position: relative;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+#grid2 {
+    height: fit-content;
+    background: white;
+    text-align: center;
+    grid-area: grid2;
+}
+
+#grid2>img {
+    margin-top: 1em;
+    max-height: 30vh;
+    max-width: 30vh;
+    object-fit: contain;
+    position: relative;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+#grid3 {
+    height: fit-content;
+    background: white;
+    text-align: center;
+    grid-area: grid3
+}
+
+#grid3>img {
+    margin-top: 1em;
+    max-height: 30vh;
+    max-width: 30vh;
+    object-fit: contain;
+    position: relative;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+#grid4 {
+    height: fit-content;
+    text-align: center;
+    background: white;
+    grid-area: grid4
+}
+
+#grid4>img {
+    margin-top: 1em;
+    max-height: 30vh;
+    max-width: 30vh;
+    object-fit: contain;
+    position: relative;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+#grid5 {
+    height: fit-content;
+    margin-bottom: 10%;
+    text-align: center;
+    overflow: hidden;
+    background: #EEEEEE;
+    grid-area: grid5
+}
+
+#grid5>img {
+    margin-top: 1em;
+    max-height: 30vh;
+    max-width: 30vh;
+    object-fit: contain;
+    position: relative;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+footer {
+    position: fixed;
+    left: 0.3rem;
+    right: 0.3rem;
+    bottom: 0;
+    height: 6em;
+    background-color: rgba(204, 204, 204, 0);
+    grid-area: footer
+}
+
+@media screen and (max-width:768px) {
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "gridGroup" "grid1" "grid2" "grid3" "grid4" "grid5" "footer";
+    }
+    #gridGroup {
+        height: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+        background: white;
+        text-align: center;
+        overflow: hidden;
+        grid-area: gridGroup
+    }
+    #grid1 {
+        height: 100%;
+        background: var(--clr-light);
+        margin-bottom: 5%;
+        grid-area: grid1
+    }
+    #grid2 {
+        height: 100%;
+        background: white;
+        text-align: center;
+        margin-bottom: 5%;
+        grid-area: grid2
+    }
+    #grid3 {
+        height: 100%;
+        background: var(--clr-light);
+        align-items: center;
+        margin-bottom: 5%;
+        grid-area: grid3
+    }
+    #grid4 {
+        height: 100%;
+        background: white;
+        margin-bottom: 5%;
+        grid-area: grid4
+    }
+    #grid5 {
+        height: 100%;
+        margin-bottom: 20%;
+        text-align: center;
+        background: #EEEEEE;
+        overflow: hidden;
+        grid-area: grid5
+    }
+    footer {
+        position: fixed;
+        left: 0.3rem;
+        right: 0.3rem;
+        bottom: 0;
+        height: 4em;
+        background-color: rgba(204, 204, 204, 0);
+        grid-area: footer
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+.skillsection {
+    width: 10%;
+    max-width: 600px;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: auto;
+}
+
+.container h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 50px;
+    color: var(--clr-dark);
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(98, 98, 98, 0.157);
+    border-radius: 10px;
+}
+
+.progress .progress-bar {
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    background-color: rgb(13, 165, 165);
+    border-radius: 12px;
+    position: relative;
+    transition: all 3s;
+    box-shadow: 0 0 10px rgb(13, 165, 165);
+}
+
+.progress-bar span {
+    position: relative;
+    right: 0;
+    color: rgb(255, 255, 255);
+}
+
+.container p {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Urbanist", sans-serif;
+}
+
+
+/*Flying objects*/
+
+.flyingBug {
+    position: relative;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+.flyingLeaf {
+    position: relative;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+
+/*Flying pbjects*_--_/

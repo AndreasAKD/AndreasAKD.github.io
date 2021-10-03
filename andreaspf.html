@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesandreas.css" type="text/css" rel="stylesheet" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <title>Andreas Dahlgren</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory&family=Urbanist:wght@381;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Andreas Dahlgren</h1>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <h1>
+                Andreas <br> Dahlgren
+            </h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-text="Hem"> Home</a></li>
+            <li><a href="about.html" data-text="Om"> About</a></li>
+            <li><a href="portfolio.html" data-text="gruppPortfolio">Portfolio</a></li>
+            <li><a href="joelsPort.html" data-text="joelsPort">Joel</a></li>
+            <li><a href="andreaspf.html" data-text="andreaspf"> Andreas</a></li>
+            <li><a href="danielsPort.html" data-text="danielsPort">Daniel</a></li>
+            <li><a href="MangPort.html" data-text="MangPort">Magnus</a></li>
+            <li><a href="ContactForm.html" data-text="Test7">Contact us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div class="gridcontainer">
+
+        <div id="grid1">
+            <img id="imgAnimateAndreas" onclick="startFullscreen(this);" src="andreasimages/porträttetmed1.jpg" alt="A portrait of Andreas" />
+        </div>
+        <div id="grid2">
+            <h3>Hi! <br><br> My name is Andreas Dahlgren</h3>
+        </div>
+
+        <div id="grid3">
+            <h3>Aspiring software developer and student at the age of 31</h3>
+            <br>
+            <p>Sometimes I see myself as a minimalistic perfectionist.
+                <br>
+                <br>I just like all things tidy, even if it's in my projects or everyday life.
+                <br>
+                <br>My discs in my disc golf bag is ordered by color.
+                <br>My bookshelf aswell.
+                <br>My desk is spotless, the only items allowed are the keyboard, mouse, mouse pad, and the occasional coffee mug.
+                <br>
+                <br>Good design is for me minimalistic, I feel good when I use applications that focus on just the necessary and that's how I will approach my own projects.
+                <br>
+                <br>My previous career in HVAC where I spent 9 years gave me great tools and experience overall.
+                <br>
+                <br>I studied IT & media at high school where we learned design and how to use Adobes full library of applications and even though I didn't touch these tools for years I still got it in me.
+                <br>I'm sort of back to where I once started and it feels great.
+                <br>
+                <br>My future goal is to bring my overall working experience and my new skills in software development to the market.
+                <br>
+
+                <br> Down below you can see my estimated skills and also an image gallery, 8 of my to this date 13562 pictures edited in lightroom. #insertsweatysmiley
+
+            </p>
+
+        </div>
+
+        <div id="grid4">
+            <div id="skillsection">
+
+                <div class="container">
+                    <div class="skillsTitel">
+                        <h2>Skills in %</h2>
+                    </div>
+
+                    <p>C#</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="30">
+                        </div>
+                    </div>
+
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="60">
+                        </div>
+                    </div>
+
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="80">
+                        </div>
+                    </div>
+
+                    <p>Java</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="80">
+                        </div>
+                    </div>
+
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70">
+                        </div>
+                    </div>
+
+                    <p>SQL</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="50">
+                        </div>
+                    </div>
+
+                    <p>Kotlin</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="30">
+                        </div>
+                    </div>
+
+                    <p>Adobe Photoshop/Lightroom</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image_grid">
+            <img id="pic1" onclick="startFullscreen(this);" src="andreasimages/HamnenFolkOsv.jpg" alt="harbourpeople" />
+            <img id="pic2" onclick="startFullscreen(this);" src="andreasimages/iiiice.jpg" alt="Rönnbär" />
+            <img id="pic3" onclick="startFullscreen(this);" src="andreasimages/mysighamn.jpg" alt="mysighamn" />
+            <img id="pic4" onclick="startFullscreen(this);" src="andreasimages/Rönnbär1.jpg" alt="iiiice" />
+            <img id="pic5" onclick="startFullscreen(this);" src="andreasimages/SA-2.jpg" alt="SA-2" />
+            <img id="pic6" onclick="startFullscreen(this);" src="andreasimages/skogen.jpg" alt="prettydarkmoon" />
+            <img id="pic7" onclick="startFullscreen(this);" src="andreasimages/rök1.jpg" alt="SA-2" />
+            <img id="pic8" onclick="startFullscreen(this);" src="andreasimages/UtsiktFrånBallen3.jpg" alt="SA-2" />
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <footer>
+            <button id="githubAndreas" onclick=" window.open('https://github.com/AndreasAKD')"><i
+                    class="fab fa-github fa-4x"></i></button>
+            <button id="twitter" onclick=" window.open('https://twitter.com')"><i
+                        class="fab fa-twitter fa-4x"></i></button>
+            <button id="facebook" onclick=" window.open('https://facebook.com','_blank')"><i
+                            class="fab fa-facebook fa-4x"></i></button>
+            <button id="instagram" onclick=" window.open('https://instagram.com','_blank')"><i
+                                class="fab fa-instagram fa-4x"></i></button>
+            <button id="mail" onclick="location.href='mailto: andreasdahlgren@live.se'"><i
+                                    class="far fa-envelope fa-4x"></i></button>
+            <button id="btnScrollToTop"><i class="fas fa-arrow-up fa-4x"></i>
+                                </button>
+        </footer>
+    </div>
+    <script src="appAndreas.js"></script>
+</body>
+
+</html>

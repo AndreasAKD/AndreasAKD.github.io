@@ -1,0 +1,305 @@
+.header {
+    background-color: #EEEEEE;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+:root {
+    --clr-light: #EEEEEE;
+    --clr-dark: #476072;
+    --clr-accent: #334257;
+    --clr-alt: #548CA8;
+    --clr-bright: rgb(13, 165, 165);
+}
+
+h1 {
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    font-family: "Urbanist", sans-serif;
+}
+
+h3 {
+    color: var(--clr-light);
+    font-family: "Urbanist", sans-serif;
+}
+
+h2 {
+    color: var(--clr-light);
+    font-family: "Urbanist", sans-serif;
+}
+
+a {
+    font-size: 1.25em;
+    font-family: "Urbanist", sans-serif;
+}
+
+p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.5em;
+}
+
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--clr-accent);
+    position: relative;
+}
+
+.logo {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-accent);
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--clr-light);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    font-family: "Urbanist", sans-serif;
+}
+
+ul li a:hover {
+    color: rgb(117, 115, 115);
+    transition-delay: 0s;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 1.8em;
+    height: 0.21em;
+    background-color: var(--clr-dark);
+    margin: 0.31em;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: none;
+    }
+    .nav {
+        background-color: var(--clr-light);
+    }
+    h1 {
+        color: var(--clr-dark);
+        background-color: var(--clr-light);
+        margin: 0.08em;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        margin-left: 60%;
+        transform: translate(-50%, 0);
+        font-family: "Urbanist", sans-serif;
+        font-weight: 900;
+    }
+    h3 {
+        color: var(--clr-light);
+        font-family: "Urbanist", sans-serif;
+    }
+    h2 {
+        color: var(--clr-light);
+        font-family: "Urbanist", sans-serif;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        color: var(--clr-light);
+        right: 0em;
+        height: 30em;
+        top: 10vh;
+        background-color: var(--clr-dark);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(110%);
+        z-index: 5;
+    }
+    .nav-links a {
+        color: var(--clr-light);
+        font-size: 2em;
+        font-family: "Urbanist", sans-serif;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        color: var(--clr-dark);
+    }
+    .logo {
+        color: rgb(88, 86, 86);
+        text-transform: uppercase;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: -10%;
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
+        display: block;
+    }
+    ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(24, 22, 22);
+        font-size: 4em;
+        font-weight: 700;
+        transition: 0.5s;
+        transition-delay: 0.1s;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes LinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(.625turn)translate(-0.4em, -0.3em);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(-.625turn) translate(-0.42em, 0.35em);
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#btnScrollToTop:hover {
+    color: black !important;
+}
+
+#btnScrollToTop:hover {
+    color: black !important;
+}
+
+
+/* Form CSS */
+
+span {
+    font-family: "Urbanist", sans-serif;
+}
+
+.errorColor {
+    color: rgb(241, 120, 120);
+    font-size: 0.6em;
+}
+
+.hideFN {
+    display: none;
+}
+
+.hideLN {
+    display: none;
+}
+
+.hidePN {
+    display: none;
+}
+
+.hideEMAIL {
+    display: none;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.3em;
+}
+
+.contactForm {
+    background-color: var(--clr-dark);
+    padding: 0.2em;
+}
+
+.labelColor {
+    color: var(--clr-light);
+}
+
+.clear:hover,
+.btn:hover {
+    background-color: var(--clr-alt);
+}
+
+.clear,
+.btn {
+    background-color: var(--clr-light);
+    cursor: pointer;
+}
+
+
+/* End of form CSS */

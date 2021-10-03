@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="stylesAbout.css" type="text/css" rel="stylesheet" />
+    <title>Portfolio Group 20</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>About us</h1>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <h1>
+                About
+            </h1>
+        </div>
+        <ul class="nav-links hideInactiveMenu">
+            <li><a href="index.html" data-text="Hem"> Home</a></li>
+            <li><a href="about.html" data-text="Om"> About</a></li>
+            <li><a href="portfolio.html" data-text="gruppPortfolio">Portfolio</a></li>
+            <li><a href="joelsPort.html" data-text="joelsPort">Joel</a></li>
+            <li><a href="andreaspf.html" data-text="andreaspf"> Andreas</a></li>
+            <li><a href="danielsPort.html" data-text="danielsPort">Daniel</a></li>
+            <li><a href="MangPort.html" data-text="Test6">Magnus</a></li>
+            <li><a href="ContactForm.html" data-text="Test7">Contact us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div class="gridcontainer">
+        <div id="gridGroup">
+            <p>We are a group of four students who have worked together on numerous projects during our education.</p>
+            <br>
+            <p>As we are creating this portfolio we are studying our 4th term of a total of 6 at Örebro University.</p>
+            <p>This work is part of the course called "Client programming" where we explore and develop skills in HTML, CSS & Javascript.</p>
+            <br>
+            <p>We have all great interest in developing our skills in software development & programming.</p>
+            <p>At the bottom of this page you will see our estimated skills in group dynamics</p>
+            <p>We have intentionally decided to primarily use English in this project.</p>
+            <br>
+            <p>Down below you will find links to each of our profiles or you can use the navigation bar.</p>
+            <br>
+
+
+        </div>
+        <div id="grid1">
+            <br>
+            <h2>Andreas Dahlgren</h2>
+            <img id="imgAnimateAndreas" onclick="startFullscreen(this);" src="andreasimages/porträttetmed1.jpg" alt="A portrait of Andreas" />
+            <p>"Whenever I'm faced with a logical problem I get obsessed with figuring out what's wrong. Suddenly a few or many more hours have passed and I didn't even notice"
+            </p>
+            <p>Click the arrow below to find out more about Andreas</p>
+            <button class="btnShow" onclick="window.location.href= 'andreaspf.html'"><i class="far fa-arrow-alt-circle-right fa-4x"></i> </button>
+        </div>
+        <div id="grid2">
+            <br>
+            <h2>Magnus Danielsson</h2>
+
+            <img id="imgAnimateMange" onclick="startFullscreen(this);" src="images/CV-Mange.jpg" alt="A portrait of Magnus" />
+            <p>“Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.”
+                —Will Ferrell</p>
+
+            <p>Click the arrow below to find out more about Magnus</p>
+            <button class="btnShow" onclick="window.location.href= 'MangPort.html'"><i class="far fa-arrow-alt-circle-right fa-4x"></i> </button>
+        </div>
+        <div id="grid3">
+            <br>
+            <h2>Daniel Barrner</h2>
+            <img id="imgAnimateDaniel" onclick="startFullscreen(this);" src=".stockimeges/smoke.jpg" alt="A portrait of Daniel" />
+            <p>"You miss 100% of the shots you don't take"<br>-Michael Scott</p>
+            <p>Click arrow below to find out more about Daniel</p>
+            <button class="btnShow" onclick="window.location.href= 'danielsPort.html'"><i class="far fa-arrow-alt-circle-right fa-4x"></i> </button>
+        </div>
+        <div id="grid4">
+            <br>
+            <h2>Joel Bengtsson</h2>
+
+            <img id="imgAnimateJoel" onclick="startFullscreen(this);" src="images/jag.jpg" alt="A portrait of Joel" />
+            <p>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way." <br> -Michael Scott.
+                <p>Click the arrow below to find out more about Joel</p>
+                <button class="btnShow" onclick="window.location.href= 'joelsPort.html'"><i class="far fa-arrow-alt-circle-right fa-4x"></i> </button>
+        </div>
+        <div id="grid5">
+            <div id="skillsection">
+
+                <div class="container">
+                    <div class="skillsTitel">
+                        <h2>Overall skills in %</h2>
+                    </div>
+
+                    <p>Requirements analysis</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="60">
+                        </div>
+                    </div>
+
+                    <p>Planning</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70">
+                        </div>
+                    </div>
+
+                    <p>Scrum</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="80">
+                        </div>
+                    </div>
+
+                    <p>eXtreme programming</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="80">
+                        </div>
+                    </div>
+
+                    <p>Interaction design</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70">
+                        </div>
+                    </div>
+
+                    <p>Git</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="90">
+                        </div>
+                    </div>
+
+                    <p>i++</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="98">
+                        </div>
+                    </div>
+
+                    <p>CTRL C + CTRL V</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="110">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="flyingBug"><i class="fas fa-bug fa-4x"></i> </button>
+            <br>
+            <br>
+            <button class="flyingLeaf"><i class="fab fa-canadian-maple-leaf fa-4x"></i>
+
+            </button>
+        </div>
+        <footer>
+            <button id="btnScrollToTop"><i class="fas fa-arrow-up fa-4x"></i>
+        </button>
+        </footer>
+    </div>
+    <script src="about.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+body {
+    overflow-x: hidden;
+}
+
+.gridcontainer {
+    margin: 0rem;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-template-rows: auto;
+    grid-template-areas: "grid2 grid1 grid1" "grid3 grid3 grid3" "grid4 grid4 grid4" "footer footer footer";
+}
+
+#grid1 {
+    height: 60vh;
+    text-align: center;
+    overflow-x: hidden;
+    background: white;
+    grid-area: grid1
+}
+
+#grid1>img {
+    position: relative;
+    overflow-x: hidden;
+    object-fit: contain;
+    margin-top: 1%;
+    height: 96%;
+    box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+}
+
+#grid2 {
+    height: 60vh;
+    background: white;
+    grid-area: grid2
+}
+
+#grid2>h3 {
+    font-size: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    color: var(--clr-dark);
+}
+
+#grid3 {
+    height: 100%;
+    background: #EEEEEE;
+    grid-area: grid3
+}
+
+#grid3>h3 {
+    font-size: 2em;
+    margin-left: 1%;
+    margin-right: 5%;
+    width: 90%;
+    color: var(--clr-dark);
+}
+
+#grid3 p {
+    font-size: 1.6em;
+    margin: 1%;
+    font-family: "Urbanist", sans-serif;
+    color: var(--clr-Dark);
+}
+
+#grid4 {
+    height: 100%;
+    margin-bottom: 10%;
+    background: rgb(255, 255, 255);
+    grid-area: grid4
+}
+
+.image_grid {
+    --gap: 0.7em;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: auto;
+    gap: var(--gap);
+    width: 96vw;
+    height: 100vh;
+}
+
+.image_grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer {
+    position: fixed;
+    left: 0.3rem;
+    right: 0.3rem;
+    bottom: 0;
+    height: 6em;
+    background-color: rgba(77, 77, 77, 0);
+    grid-area: footer
+}
+
+@media screen and (max-width:1024px) {
+    .image_grid {
+        --gap: 1em;
+        box-sizing: border-box;
+        padding: var(--gap);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: auto;
+        gap: var(--gap);
+        width: 96vw;
+        height: 100vh;
+    }
+    .image_grid>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    #grid1 {
+        height: 60vh;
+        text-align: center;
+        background: white;
+        grid-area: grid1
+    }
+    #grid1>img {
+        position: relative;
+        object-fit: contain;
+        margin-top: 1%;
+        height: 96%;
+        box-shadow: -10px 10px 5px 1px rgba(0, 0, 0, 0.32);
+    }
+    #grid2 {
+        height: 60vh;
+        background: white;
+        grid-area: grid2
+    }
+    #grid3 {
+        height: 100%;
+        background: #EEEEEE;
+        align-items: center;
+        grid-area: grid3
+    }
+}
+
+
+/* Down below we have the mobile settings */
+
+@media screen and (max-width:768px) {
+    .image_grid {
+        --gap: 1em;
+        --num-cols: 4;
+        --row-height: 60em;
+        box-sizing: border-box;
+        padding: var(--gap);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+        gap: var(--gap);
+        width: 97vw;
+        height: 100vh;
+    }
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.4%;
+        grid-template-rows: auto;
+        grid-template-areas: "grid2 grid2 grid1" "grid3" "grid4" "footer";
+    }
+    #grid2>h3 {
+        font-size: 1.5em;
+        margin-left: 5%;
+        margin-top: 15%;
+        margin-right: 100%;
+        width: 100%;
+        color: var(--clr-dark);
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        height: 5em;
+        background-color: rgba(204, 204, 204, 0);
+        grid-area: footer
+    }
+}
+
+
+/* Social media buttons down below in footer */
+
+#githubAndreas {
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#githubAndreas:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#twitter {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#twitter:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#facebook {
+    position: fixed;
+    left: 20%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#facebook:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#instagram {
+    position: fixed;
+    left: 35%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#instagram:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#mail {
+    position: fixed;
+    left: 65%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#mail:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+
+/* Code down below to control the skills and progress bars for it */
+
+.skillsection {
+    width: 10%;
+}
+
+.container {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: auto;
+}
+
+.container h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 2.5em;
+    color: var(--clr-dark);
+}
+
+.progress {
+    width: 100%;
+    height: 1.25em;
+    background-color: rgba(98, 98, 98, 0.157);
+    border-radius: 0.6em;
+}
+
+.progress .progress-bar {
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    background-color: rgb(13, 165, 165);
+    border-radius: 0.75em;
+    position: relative;
+    transition: all 3s;
+    box-shadow: 0 0 10px rgb(13, 165, 165);
+}
+
+.progress-bar span {
+    position: relative;
+    right: 0;
+    color: rgb(255, 255, 255);
+}
+
+.container p {
+    margin-top: 1.25em;
+    font-size: 1.5em;
+    font-family: "Urbanist", sans-serif;
+}
