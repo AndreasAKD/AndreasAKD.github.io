@@ -43,6 +43,7 @@ body {
 
 #grid3 {
     height: 100%;
+    text-align: center;
     background: #EEEEEE;
     grid-area: grid3
 }

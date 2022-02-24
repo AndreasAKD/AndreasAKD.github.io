@@ -49,6 +49,7 @@ a {
 p {
     font-family: "Urbanist", sans-serif;
     font-size: 1.5em;
+    color: #476072;
 }
 
 * {
@@ -101,7 +102,7 @@ ul li a:hover {
 
 .burger div {
     width: 1.8em;
-    height: 0.21em;
+    height: 0.22em;
     background-color: var(--clr-dark);
     margin: 0.31em;
     transition: all 0.4s ease;
@@ -305,6 +306,80 @@ textarea {
     background-color: var(--clr-light);
     cursor: pointer;
 }
+
+
+/* Social media buttons down below in footer */
+
+#githubAndreas {
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#githubAndreas:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#twitter {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#twitter:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#facebook {
+    position: fixed;
+    left: 20%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#facebook:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#instagram {
+    position: fixed;
+    left: 35%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#instagram:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+#mail {
+    position: fixed;
+    left: 65%;
+    bottom: 5%;
+    color: rgb(13, 165, 165);
+    background: transparent;
+    border: 0;
+}
+
+#mail:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
 
 
 /* End of form CSS */
