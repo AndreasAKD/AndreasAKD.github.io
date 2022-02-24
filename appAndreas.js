@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    
+    
+
+      
     function imgAndreasLeft() {
         $("#imgAnimateAndreas").animate({ left: "-=50" }, 3000, "swing", imgAndreasRight);
     }
@@ -9,6 +13,10 @@ $(document).ready(function() {
     }
 
     imgAndreasRight();
+    
+
+
+    
 });
 
 
