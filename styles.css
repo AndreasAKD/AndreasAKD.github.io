@@ -7,6 +7,11 @@ body {
     background-color: #fff;
 }
 
+.btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
+    background-color: #46812b!important;
+    border-color: #46812b!important;
+}
+
 :root {
     --clr-light: #EEEEEE;
     --clr-dark: #476072;
