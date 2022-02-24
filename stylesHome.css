@@ -66,15 +66,7 @@
                                 grid-area: grid3
                             }
                             
-                            footer {
-                                position: fixed;
-                                left: 0.3rem;
-                                right: 0.3rem;
-                                bottom: 0;
-                                height: 6em;
-                                background-color: rgba(204, 204, 204, 0);
-                                grid-area: footer
-                            }
+        
                             
                             .playPauseButtons:active {
                                 transform: scale(0.93);
@@ -107,13 +99,5 @@
                                     align-items: center;
                                     grid-area: grid3
                                 }
-                                footer {
-                                    position: fixed;
-                                    left: 0.3rem;
-                                    right: 0.3rem;
-                                    bottom: 0;
-                                    height: 4em;
-                                    background-color: rgba(204, 204, 204, 0);
-                                    grid-area: footer
-                                }
+  
                             }
